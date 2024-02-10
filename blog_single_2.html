@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football has made me who I'am</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body style="background-color: rgba(12, 20, 26, 0.812);">
+
+    <div class="maslin-page-wrapper-blog"></div>
+
+        <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll" href="index.html">Shajirudheen Koppilan</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"> <a class="nav-link js-scroll active" href="index.html">Home</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html">About</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#service">Experience</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#project">Gallery</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#blogs">Blogs</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#achievments">Achievments</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="article">
+            <div class="container">
+                <div id="blogContainer">
+                    <h1> Football has made me who I'am</h1>
+                    <h5>22-01-23</h5> 
+                    <div class="imgContainer">
+                        <img src="./assets/img/4.jpeg" alt="">
+                        <img src="./assets/img/9.jpeg" alt="">
+                    </div>
+                    <p class="blogPara">
+                        Football, or soccer as it is known in some parts of the world, has been a constant presence in my life for as long as I can remember. From a young age, I fell in love with the sport and all that it represents. It has not only taught me valuable lessons about teamwork and discipline, but it has also shaped who I am as a person.
+                    </p>
+
+                    <p>
+                        As a child, I would spend hours on end playing football with my friends in the park. We would organize pick-up games and pretend to be our favorite players, scoring goals and making saves just like them. The camaraderie and sense of belonging that came with being part of a team was something special to me. It was through these early experiences that I learned the importance of teamwork and how to work together towards a common goal.
+
+                        As I got older and began to play organized football, the discipline and hard work required to succeed at the sport became more apparent. I quickly learned that success on the field was not just about talent, but also about dedication and perseverance. The countless hours of practice and training helped me develop a strong work ethic that I have carried with me throughout my life.
+                    </p>
+
+                    <p class="blogPara">
+                        Beyond the physical aspects of the sport, football has also taught me valuable life lessons. It has taught me how to handle both success and failure, how to work through adversity, and how to stay humble in the face of success. These lessons have helped me not only on the field, but in every aspect of my life.
+                    </p>
+
+                    <p>
+                        In short, football has been a defining part of who I am and has helped shape me into the person I am today. It has taught me valuable lessons about teamwork, discipline, and perseverance and has instilled in me a strong work ethic that has helped me to succeed in all aspects of life. I am grateful for the role that football has played in my life and will always be a passionate fan of the sport.
+                    </p>
+
+                    <div class="shareButton">
+                        <button type="Share Now" onclick="shareButton()">Share Now</button>
+                        <input hidden type="text" value="https://shajirudheenkoppilan.in/index.html#blogs" id="myInput">
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+
+        
+
+        <!-- Footer Section Start -->
+        <footer class="footer-area">
+            <div class="copyright-area text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Copyright &copy; 2021 - All Right Reserved By Batheco.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+    </div>
+
+    <script>
+        function shareButton() {
+          // Get the text field
+          var copyText = document.getElementById("myInput");
+        
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
+        
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);
+          
+          // Alert the copied text
+          alert("Copied the text: " + copyText.value);
+        }
+    </script>
+    
+</body>
+</html>

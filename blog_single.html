@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Single Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body style="background-color: rgba(12, 20, 26, 0.812);">
+
+    <div class="maslin-page-wrapper-blog"></div>
+
+        <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll" href="index.html">Shajirudheen Koppilan</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"> <a class="nav-link js-scroll active" href="index.html">Home</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html">About</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#service">Experience</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#project">Gallery</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#blogs">Blogs</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#achievments">Achievments</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="article">
+            <div class="container">
+                <div id="blogContainer">
+                    <h1>Importance of teaching football skills on children...</h1>
+                    <h5>22-01-23</h5>
+                    <div class="imgContainer">
+                        <img src="./assets/img/blog1.1.jpeg" alt="">
+                        <img src="./assets/img/blog1.2.jpeg" alt="">
+                    </div>
+                    <p class="blogPara">
+                        Football is one of the most popular sports in the world, and for good reason. Not only is it a fun and exciting game, but it also offers a wide range of benefits for children who learn to play it well. In this blog post, we will explore the importance of teaching football skills to children and why it's a great idea for parents and coaches to invest time and energy into developing young players.
+                    </p>
+
+                    <p>
+                        First and foremost, playing football helps children develop physical skills such as coordination, balance, and agility. These skills are essential for overall physical development and can help children perform better in other sports and activities as well. Football also requires children to be in good cardiovascular health, which can help them maintain a healthy weight and reduce their risk of developing chronic diseases like diabetes and heart disease.
+                    </p>
+
+                    <p class="blogPara">
+                        In addition to physical benefits, football also helps children develop important mental and social skills. The game requires players to think strategically, make quick decisions, and work well with their teammates. These skills can help children succeed not only on the field, but also in the classroom and in their future careers.
+                    </p>
+
+                    <p>
+                        Furthermore, Football can also be a great way for children to make new friends and build positive relationships with their peers. The teamwork and camaraderie that are a part of the game can help children learn how to communicate effectively, resolve conflicts, and support one another.
+                    </p>
+                    <p>
+                        Lastly, Football is a great way to instill discipline and a strong work ethic in children. It takes dedication and hard work to become a skilled player, and children who learn to push themselves and strive for improvement will likely carry those traits with them throughout their lives.
+
+In conclusion, teaching football skills to children is an investment in their future. It not only helps them to develop physically and mentally but also helps them to learn life skills that will help them to succeed in all aspects of life. Parents and coaches should encourage children to play football and to participate in regular training sessions to help them to become skilled and confident players.
+                    </p>
+
+                    <div class="shareButton">
+                        <button type="Share Now" onclick="shareButton()">Share Now</button>
+                        <input hidden type="text" value="https://shajirudheenkoppilan.in/index.html#blogs" id="myInput">
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+
+        
+
+        <!-- Footer Section Start -->
+        <footer class="footer-area">
+            <div class="copyright-area text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Copyright &copy; 2021 - All Right Reserved By Batheco.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+    </div>
+
+    <script>
+        function shareButton() {
+          // Get the text field
+          var copyText = document.getElementById("myInput");
+        
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
+        
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);
+          
+          // Alert the copied text
+          alert("Copied the text: " + copyText.value);
+        }
+    </script>
+    
+</body>
+</html>

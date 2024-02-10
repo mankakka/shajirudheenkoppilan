@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encourage everyone according to their own interests</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body style="background-color: rgba(12, 20, 26, 0.812);">
+
+    <div class="maslin-page-wrapper-blog"></div>
+
+        <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll" href="index.html">Shajirudheen Koppilan</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"> <a class="nav-link js-scroll active" href="index.html">Home</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html">About</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#service">Experience</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#project">Gallery</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#blogs">Blogs</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#achievments">Achievments</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="article">
+            <div class="container">
+                <div id="blogContainer">
+                    <h1>Encourage everyone according to their own interests</h1>
+                    <h5>22-01-22</h5> 
+                    <div class="imgContainer">
+                        <img src="./assets/img/academy/academy-3.jpeg" alt="">
+                        <img src="./assets/img/academy/academy-1.jpeg" alt="">
+                    </div>
+                    <p class="blogPara">
+                        Encouraging everyone according to their own interests is a great way to foster a positive and productive environment, especially when it comes to sports such as football. When individuals are able to pursue their passions, they are more likely to be engaged and motivated in their work. This can lead to increased productivity, creativity, and job satisfaction.
+                    </p>
+
+                    <p>
+                        One way to encourage people according to their interests in football is to provide opportunities for them to pursue their passions within the workplace. For example, a company might offer employee resource groups, where employees can come together to discuss and pursue their interests in football. This could include groups for fantasy football, watching games together, or even participating in company football leagues.
+                    </p>
+
+                    <p class="blogPara">
+                        Another way to encourage people according to their interests in football is to give them the freedom to pursue their passions outside of work. For example, a company might offer flexible schedules or remote work options, which would allow employees to attend football games or watch them during their free time.
+                    </p>
+
+                    <p>
+                        Encouraging people according to their interests in football also means valuing and respecting the diverse perspectives and skills that come from different backgrounds and interests. This can be done by creating an inclusive culture where everyone is encouraged to share their ideas and perspectives, and by providing opportunities for professional development that align with individual interests in football.
+                    </p>
+                    <p>
+                        Overall, encouraging everyone according to their own interests is a great way to create a positive and productive work environment, especially when it comes to football. It helps individuals to feel engaged and motivated in their work, and it can lead to increased productivity and job satisfaction.
+
+                        It's important to note that encouraging people according to their interests in football should not be at the expense of others who may not be interested in the sport. It's important to create a balance and provide opportunities for other interests as well.
+                    </p>
+
+                    <div class="shareButton">
+                        <button type="Share Now" onclick="shareButton()">Share Now</button>
+                        <input hidden type="text" value="https://shajirudheenkoppilan.in/index.html#blogs" id="myInput">
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+
+        
+
+        <!-- Footer Section Start -->
+        <footer class="footer-area">
+            <div class="copyright-area text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Copyright &copy; 2021 - All Right Reserved By Batheco.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+    </div>
+
+    <script>
+        function shareButton() {
+          // Get the text field
+          var copyText = document.getElementById("myInput");
+        
+          // Select the text field
+          copyText.select();
+          copyText.setSelectionRange(0, 99999); // For mobile devices
+        
+          // Copy the text inside the text field
+          navigator.clipboard.writeText(copyText.value);
+          
+          // Alert the copied text
+          alert("Copied the text: " + copyText.value);
+        }
+    </script>
+    
+</body>
+</html>
